@@ -1,0 +1,9 @@
+Hej!
+Jag heter Soumya. Jag är en industrial automation ingenjör (Bachelor of Engineering, Instrumentation Technology) och erfaren testare med kunskap inom agila testning. 
+Jag har arbetat med produkt testning i flera år i mina tidigare anställningar.
+ Nu går jag en utbildning i Java Enterprise hos Lexicon IT.
+I slutet av kursen (juni '17), kommer jag att vara certiferas för Java SE8(OCA - 1) och ISTQB(Grund nivå).
+ 
+Jag skulle vara intresserad av för anstäälning/praktik  inom test automation/functionella testning/API testning och/eller utan Java kunskap på ert företag?
+
+Härmed bifogar jag mitt CV.
