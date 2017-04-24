@@ -27,14 +27,46 @@
 
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+%\usepackage{hyperref}
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 %\usepackage[T1]{fontenc}
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\usepackage[bottom]{footmisc}
-\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\usepackage{fontawesome}
+%\usepackage{fontspec}
+\setlength{\hintscolumnwidth}{2.8cm} % Uncomment to change the width of the dates column
 
 % \setlength{\makecvtitlenamewidth}{8cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------------
+% Custom footer
+%----------------------------------------------------------------------------------------------
+
+%\newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
+\newcommand*{\github}[1]{\def\@github{#1}}
+\newcommand\githublogo{\raisebox{-1pt}{\includegraphics[height=9pt]{github}}\ }
+\newcommand\linkedinlogo{\raisebox{-1pt}{\includegraphics[height=9pt]{linkedin}}\ }
+
+%\renewcommand*{\makecvfooter}{%
+%  \setlength{\footerwidth}{0.8\textwidth}%
+%  \fancypagestyle{plain}{%
+%    \fancyfoot[c]{%
+%      \parbox{\footerwidth}{%
+%        \centering%
+%        %\color{color2}\addressfont%
+%        %\ifthenelse{\isundefined{\@addressstreet}}{}{\addtofooter[]{\addresssymbol\@addressstreet}%
+%         % \ifthenelse{\equal{\@addresscity}{}}{}{\addtofooter[~--~]{\@addresscity}}\flushfooter\@firstfooterelementtrue\\}% if \addresstreet is defined, \addresscity will always be defined but could be empty
+%        %\ifthenelse{\isundefined{\@addressstreettwo}}{}{\addtofooter[]{\addresssymbol\@addressstreettwo}%
+%         % \ifthenelse{\equal{\@addresscitytwo}{}}{}{\addtofooter[~--~]{\@addresscitytwo}}\flushfooter\@firstfooterelementtrue\\}% if \addresstreet is defined, \addresscity will always be defined but could be empty
+%%\ifthenelse{\isundefined{\@extrainfo}}{}{\addtofooter{\@extrainfo}}%
+%        \ifthenelse{\isundefined{\@mobile}}{}{\addtofooter{\mobilesymbol\@mobile}}%
+%          \ifthenelse{\isundefined{\@email}}{}{\addtofooter{\emailsymbol\emaillink{\@email}}}%
+%        \ifthenelse{\isundefined{\@homepage}}{}{\addtofooter{\homepagesymbol\httplink{\@homepage}}}%
+%        
+%        \ifthenelse{\isundefined{\@linkedin}}{}{\addtofooter{\linkedinlogo\externallink{\@linkedin}}}%
+%        \ifthenelse{\isundefined{\@github}}{}{\addtofooter{\githublogo\externallink{\@github}}}%
+%        \flushfooter}}}%
+%\pagestyle{plain}}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -47,9 +79,10 @@
 % \address{Persikogatan 62}{16563, Hässelby}
 \mobile{+46 76229 3699}
 \email{soumya.saligram@gmail.com}
+%\github{https://github.com/chisma}
+%\addtofooter{linkedinlogo}\url{https://www.linkedin.com/in/soumyaprasad/}
 %\social[linkedin][https://www.linkedin.com/in/soumyaprasad/]{Soumya Prasad}
-%\social[github]{chisma}
-
+%\addtofooter{\faGithub\externallink{\@github}}
 \photo[70pt][0.5pt]{pictures/IMG_edited} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 
 
@@ -65,38 +98,39 @@ agile projects and diverse teams. Collaborating closely with development teams, 
 I have worked with international teams, both big and small.
 
 \hfill \break
-I was on a maternal sabbatical from June, 13 - December '16. During this time, I updated myself on the current trends in test automation and web technologies. I am
-familiar with :
+I was on a maternal sabbatical from June, 13 - December '16. During this time, I updated myself on the current trends in test automation and web technologies. I moved to Stockholm in November, 2015.
 
+\hfill \break
+Technical Background:
 	\begin{itemize}
-	\item RESTful web services
-	\item Testing with SOAPUI, JMeter 
-	\item Python2
-	\item Git on bash, windows(command line)
+	\item Eclipse IDE on Linux/Windows
 	\item Editors - Atom, VSCode
-	\item Documentation using LaTeX(Unix/Windows)
-	\item Coursera - Introduction on mathematical logic, Introduction to Algorithms - Part 1
-	\end{itemize}	
+	\item JavaSE8/JavaEE fundamentals
+	\item Spring/Hibernate/JPA fundamentals
+	\item Maven fundamentals
+	\item JUnit
+	\item SQL fundamentals
+	\item HTML5/CSS3/JavaScript/JQuery/Python2
+	\item Testing with SOAPUI, JMeter 
+	\item Git on bash, windows(command line)
+	\item OCA - Programmer 1(Java SE8)
+	\item ISTQB - Foundation level
+	\item Documentation using LaTeX(Linux/Windows)
+	\item Linux environment
+ 	\end{itemize}
 
 \hfill \break
 I am looking for testing roles involving API testing of Java based services or products. I am easy to work with,
 a keen learner, very communicative and thrive working in a team. I can communicate in English and Swedish.
-I have completed SFI-C and pursuing weekend classes for D level.
+I am pursuing SFI D weekend classes.
 
 \section{Training}
-I am currently a student at Lexicon IT Konsult, Stockholm, pursuing a 'Java System Utvecklare' training(Febraury '17 - June '17). I am familiar with:
-	\begin{itemize}
-	\item JavaSE8
-	\item JavaEE fundamentals
-	\item Spring/Hibernate fundamentals
-	\item Maven fundamentals
-	\item JUnit
-	\item SQL fundamentals
-	\item HTML5/CSS/JavaScript
-	\item Eclipse IDE on Linux/Windows
-	\item OCA - Programmer 1(Java SE8)
-	\item ISTQB - Foundation level
- 	\end{itemize}
+\cventry{Feb, 17 - }{Student}{\textsc{Lexicon IT Konsult}}{Stockholm}{}{
+I am currently a student at Lexicon IT Konsult, Stockholm, pursuing a 'Java System Utvecklare' training. I am working with JavaEE/JPA/Web Front End. All the code I have produced 
+during the training is available at: 
+\hfill\break
+{\faGithub\url{https://github.com/chisma}}.
+}
 
 \section{Experience}
 \cventry{Apr,12 - May,13}{Associate lead}{\textsc{Schneider electric}}{Bangalore}{}{
