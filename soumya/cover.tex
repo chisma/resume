@@ -1,38 +1,98 @@
-\documentclass{article}
-\setlength{\topmargin}{-1in}
-\setlength{\textheight}{9in}
-\setlength{\oddsidemargin}{.125in}
-\setlength{\textwidth}{6.25in}
-\setlength{\parindent}{0em}
-\setlength{\parskip}{1em}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Formal Letter
+% LaTeX Template
+% Version 2.0 (7/2/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@LaTeXTemplates.com)
+%
+% Originally based on an example on WikiBooks 
+% (http://en.wikibooks.org/wiki/LaTeX/Letters) but rewritten as of v2.0
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{letter} % 10pt font size default, 11pt and 12pt are also possible
+
+\usepackage{geometry} % Required for adjusting page dimensions
+
+%\longindentation=0pt % Un-commenting this line will push the closing "Sincerely," to the left of the page
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	top=3cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	left=4.5cm, % Left margin
+	right=4.5cm, % Right margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+
+%\usepackage{esstix} % Use the Stix font by default
+
+\usepackage{microtype} % Improve justification
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME & ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\signature{Soumya Prasad} % Your name for the signature at the bottom
+
+\address{Söderberga Allé 52 \\ Bromma Stockholm} % Your address and phone number
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
-\title{Soumya N Prasad}
-\author{soumya.saligram@gmail.com \\
-+46 76229 3699}
-\date{\vspace{-5ex}}
-\maketitle
-\section*{}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{Arash Zamayeri \\ Swedbank, Stockholm} % Name/title of the addressee
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT SECTION
+%----------------------------------------------------------------------------------------
+
+\opening{\textbf{Dear Sir}}
 I am Soumya Prasad. Please allow me to introduce myself.  
-I am an engineer from India with consistently good academic record. 
-I have recently moved to Stockholm, but previously, 
-I have worked for several years in Schneider Electric, Honeywell and GE.
+I am an engineer with almost 10 years of experience in various
+areas of product testing.
+\hfill \break
+I currently work as a QA Engineer at Cabonline Technologies AB, Stockholm
+working with automating end-to-end tests for several ReactJs applications.
+I also focus on quick and lean integration of the tests into existing
+CI pipelines, while dockerizing the test environments, for reliability.
+\hfill \break
+I find this opportunity of working as QA at Swedbank- engaging, since I have
+previously worked as a QA for automating functional tests for a Stock Exchange 
+clearing system and I find the financial domain exciting. 
 
-In my previous roles, I was working in testing industrial automation
-software. I was doing acceptance and exploratory tests. I have written
-scripts for automated testing with TestComplete and Selenium. I have
-worked in agile projects and diverse teams. Also closely 
-interacting with development teams during the entire process. The 
-teams have sometimes been international, both big and small.
 
-I am currently looking for roles involving product management. 
-I am passionate about building the right products and I believe
-I can leverage my previous experiences.
 
-I find Klarna interesting because it seem like a fun place to work
-(from what I see on Instagram).  I also know I will be working with
-highly skilled workers, from KonferenSE videos.
-I can even think of a tagline for Klarna - lovable payments!
+I look forward to your reply.
 
-I am new to Stockholm and Swedish but I am quickly learning the language!
+\vspace{2\parskip} % Extra whitespace for aesthetics
+\closing{Sincerely,}
+\vspace{2\parskip} % Extra whitespace for aesthetics
 
+%\ps{P.S. You can find additional information attached to this letter.} % Postscript text, comment this line to remove it
+
+%\encl{Copyright permission form} % Enclosures with the letter, comment this line to remove it
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+ 
 \end{document}
