@@ -1,0 +1,281 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=2cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\newcommand{\coloredhref}[3][blue]{\href{#2}{\color{purple}{#3}}}%
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo{./pictures/SoumyaPass.jpg}
+\name{Soumya}{Prasad}
+\position{Kvalitetssäkring{\enskip\cdotp\enskip}CI pålitlighet}
+
+\mobile{(+46) 73-340 12 29}
+\email{soumya.saligram@gmail.com}
+\github{chisma}
+\linkedin{soumyaprasad}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Soumya Prasad~~~·~~~Resume}
+  {\thepage}
+
+\cvsection{Mål}
+\begin{cvparagraph}
+
+    Vil arbeta som test automatiserare för moderna web applikationer eller mobil appar samt med "Dev-ops" att säkerställa
+    värje leverans som goras är helt regressionstestad. Sträva att utveckla kunskaper inom Containerization samt ser fram 
+    emot att börja bygga kompetens inom Google Cloud Platform och samhörande verktyger att skapa ett pålitlig Test-Ops miljö. 
+    Tycker om utmaningen att snabbt sätta mig in i ett intressanta problem.
+\end{cvparagraph}
+
+\cvsection{Profil}
+\begin{cvparagraph}
+
+    Erfaren och driven testare med helhetssyn. 10 års erfarenhet av test och kvalitetssäkring av 
+    clearing system för börser, offentliga appar för taxiversamhet, IoT sensornäterk och industriell automation produkter.
+    Är analytisk, ivrig studerande, ansvarstagande och utåtriktad. 
+    Arbetar som Kvalitetssäkringsingenjör på IT avdelning av en berömd taxibolag sedan Maj 2019. 
+\end{cvparagraph}
+
+\cvsection{Arbetslivserfarenhet}    
+  \begin{cventries}
+    \cventry
+      {Kvalitetssäkringsingenjör}
+      {Cabonline Technologies AB}
+      {Maj 2019 - pågående}
+      {Stockholm}
+      {
+        \begin{cvparagraph}
+            Cabonline Gruppen står bakom några av Nordens starkaste varumärken i taxiverksamheten(Tex: TaxiKurir, TopCab, Norges Taxi),
+            Deras Appar samlar 5700 bilar från flera av Nordens storsta taxibolag vilket minimerar väntetid oavsett var och när man vill åka, 
+            genom endast 3 enkla steger. Det betyder att appar anpassar sig värje "sprint", beroende på kundfeedback, betygsättning av föraren
+            och aktuella marknads möjligheter. Det innebär i sin tur, flera fall av regression, på löpande sätt. Automatiserade end-to-end tester behövs
+            köra att godkänna leveransen. 
+        \end{cvparagraph}       
+        \begin{cvitems}
+          \item Skriver end-to-end tester till alla webappar- interna och externa
+          \item Skapar Docker lösningar till test miljöer samt integrering med CI pipeline
+          \item Daglig övervakning av CI jobb för mislyckanden, flakyness
+          \item Felsökning, debugging, optimering av Docker körning 
+          \item Uppdaterar, spårar backlog på JIRA
+          \item Cypress, ReactJs, Docker, Jenkins, e2e testning, automatiserad visualla testning
+        \end{cvitems}
+      }
+     
+    \cventry
+      {Test Utvecklare}
+      {Cinnober Financial Technology AB/NASDAQ}
+      {Sep 2017 - Maj 2019}
+      {Stockholm}
+      {
+        \begin{cvparagraph}
+            Cinnober utvecklade affärskritiska systemlösningar för börshandel, riskhantering och andra 
+            finansiella tjänster. Målgruppen för bolagets kärnverksamhet består främst av internationella börser, 
+            clearinghus, banker och mäklarhus. Jag jobbade med JSE temet 
+            var byggde vi ett nytt reltids clearinghus system- RTC. Cinnober blev köpt av NASDAQ i 2019. 
+        \end{cvparagraph}
+        \begin{cvitems}
+          \item Ansvarig för automatiserade funktionella tester till REST APIet, bestog av flera komplexa testfall inom riskhantering
+          \item Samarbetade med systems utvecklare, för buggfixes och nya features, ibland med parallela leveranser 
+          \item Hade testerna integrerade i CI till flera workflows, så fort som möjlighet 
+          \item Övervakning, optimering av bygger
+          \item Agerade som scrummästare för test-sprints
+          \item Hanterade kod-coverage på CI 
+          \item JavaSE8, Eclipse, JUnit4, SmartGit, Python3, Confluence, JIRA, SonarCube
+        \end{cvitems}
+      }
+
+    \cventry
+      {Praktikant}
+      {Yanzi Networks AB}
+      {May 2017 - Jul 2017}
+      {Stockholm}
+      {
+        \begin{cvitems}
+          \item Testning av en websocker baserad API med Mocha/Chai biblioteket
+          \item API Dokumentation med LaTeX, på Unix miljö
+          \item JavaScript(ES6)
+          \item Mocha/Chai/BDD
+          \item REST API/websockets
+          \item LaTeX
+          \end{cvitems}
+      }
+
+
+    \cventry
+      {Associerad Ledare}
+      {Schneider Electric}
+      {Apr 2012- Maj 2013}
+      {Bengaluru, Indien}
+      {
+        \begin{cvitems}
+          \item Som en ämnesexpert, hållit på med att utveckla test-automatisering lösning med TestComplete
+          \item Arbetat med flera scrum grupper under acceptanstest och viktiga leveranser
+          \end{cvitems}
+      }
+
+    \cventry
+      {Senior Ingenjör}
+      {Honeywell India Technology Labs}
+      {Dec 2005 - Mar 2012}
+      {Bengaluru, Indien}
+      {
+        \begin{cvitems}
+        \item Definierade test planen och test specifikationer för integration och prestandatestning, manuell system validering
+        \item Root cause analysis och löpande förbättringar(Kaizen)
+        \end{cvitems}
+      }
+
+    \cventry
+      {Projekt Ingenjör}
+      {GE Intelligent Systems(Emerson India)}
+      {Nov 2003 - Nov 2005}
+      {Bengaluru, Indien}
+      {
+        \begin{cvitems}
+        \item Läste designen samt tekniska specifikationer mot tagit av kunden och tabullera mjukvaru kräver samt BOM 
+        \item Utvecklade PLC logiken genpm PLC ladder-språk och VB Script
+        \item Deltog i kundinspektioner, projektrecensioner och mjukvaru demoer
+        \end{cvitems}
+      }
+  \end{cventries}
+
+%\newpage
+
+\cvsection{Kurser}
+  \begin{cventries}
+    \cventry
+    {Student}
+      {Stanford University}
+      {StanfordOnline: SOE.YDB-SQL0001}
+      {Maj 2020 - ongoing}
+      {
+        \begin{cvitems}
+        \item {Studerar i en certiferingskurs om Databaser}
+        \end{cvitems}
+      }
+
+    \cventry
+      {Student}
+      {University of Pennsylvania}
+      {coursera.org}
+      {Feb 2020 - Apr 2020}
+      {
+        \begin{cvitems}
+        \item {Klarade en certifieringskurs om Computational Thinking for Problem Solving}
+        \end{cvitems}
+      }
+
+    \cventry
+      {Student}
+      {Lexicon IT Konsult}
+      {Feb 2017 - Jun 2017}
+      {Stockholm}
+      {
+        \begin{cvitems}
+          \item JavaSE8
+          \item JavaEE fundamentals
+          \item Spring/Hibernate fundamentals
+          \item Maven fundamentals
+          \item JUnit
+          \item SQL fundamentals
+          \item HTML5/CSS/JavaScript
+          \item Eclipse IDE on Linux/Windows
+           \end{cvitems}
+      }
+    \end{cventries}
+
+    \cvsection{Utbildning}
+    \begin{cventries}
+    \cventry
+        {Civilingenjörexamen}
+        {Dayananda Sagar Institute of Engineering}
+        {Bengaluru, Indien}
+        {1999 - 2003}
+        {
+            \begin{cvitems}
+            \item {Instrumenteringsteknik och blev godkänt med utmärkta betyg}
+            \end{cvitems}
+        }
+  \end{cventries}
+
+  \cvsection{Pris och ära}
+  \begin{cvhonors}
+
+    %---------------------------------------------------------
+      \cvhonor
+      {Honeywell}
+      {Bravo-Gold:Process Excellence}
+      {Bengaluru}
+      {2009}
+
+      \cvhonor
+      {Honeywell}
+      {ACS Special Award}
+      {Bengaluru}
+      {2007}
+
+      \cvhonor
+      {Honeywell}
+      {Team excellence award}
+      {Bengaluru}
+      {2006}
+  \end{cvhonors}
+\end{document}
