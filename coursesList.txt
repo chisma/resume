@@ -1,0 +1,22 @@
+Java Spring Boot, Microservices-
+
+https://www.coursera.org/projects/microservices-with-spring-boot 10$
+
+Spring boot testing-
+https://www.coursera.org/projects/java-spring-boot-application-software-testing 10$
+
+
+Spring Developer Training-
+https://www.linkedin.com/learning/paths/become-a-spring-developer
+
+AWS Certification-
+https://www.udemy.com/course/aws-certified-cloud-practitioner-new/ - 12€
+
+GCP Certification-
+https://www.udemy.com/course/google-certified-associate-cloud-engineer/
+
+Selenium Framework (Advanced)-
+https://www.udemy.com/course/automation-framework-with-selenium/
+Complete SQL Bootcamp before this-
+https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/
+
