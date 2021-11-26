@@ -16,6 +16,10 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 \usepackage{fontspec}
 \usepackage{fontawesome}
+\usepackage[autostyle]{csquotes}
+\usepackage{xcolor,luacolor,lua-ul}
+\usepackage[usenames, dvipsnames]{color}
+
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=2cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -70,7 +74,6 @@
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader
-
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
@@ -87,17 +90,16 @@ account managers and testers - to best align with the use-case, while at the sam
 
 \hfill \break
 I am working as a {\color{cyan}\textbf{Senior Test Consultant}} at {\href{https://b3.se/innovation/}{\color{cyan}\textbf{B3 Innovation AB}} since January 2021, currently
-on assignment as Senior QA Specialist at Nasdaq, Stockholm. 
+on assignment as Senior QA Test Automation Specialist at {\color{cyan}\textbf{Nasdaq, Stockholm}}. 
 
 \hfill \break
-Prior to this I worked in a TestOps role in an internal React Native project, working with Android/iOS testing with Appium, Selenium WebdriverIO, ReactJs application testing with 
-Cypress and Google Firebase integrations, X-Ray-JIRA integration and bitbucket pipelines. I am a certified SAFe 5.0 Agilist.
-I am familiar with post trade solutions and trading platforms in general(With hands-on knowledge of clearing technology for stock exchanges). I have also briefly worked
-with IoT sensor networks and for several years in industrial automation.
+Prior to this I worked in a \highLight{TestOps role} in an internal React Native project, working with Android/iOS testing with Appium, Selenium WebdriverIO, ReactJs application testing with 
+Cypress and Google Firebase integrations, X-Ray-JIRA integration and bitbucket pipelines. I have worked with setting up a Cypress test suite, applied Postman to make manual regression testing faster and repeatable. I am a \highLight{certified SAFe 5.0 Agilist}.
+I am familiar with post trade solutions and trading platforms in general(With hands-on knowledge of clearing technology for stock exchanges). Ealier in my career, I have worked for several years in industrial automation.
 
 \hfill \break
-In my upcoming assignments as a senior consultant I look forward to applying my broad experience in various aspects of Quality Assurance, coaching, test planning
-and driving testability in exciting projects. I thrive working in cross-functional teams.
+In my upcoming assignments as a senior QA, I look forward to applying my broad experience in various aspects of Quality Assurance, coaching, test planning
+and driving \enquote{shift-left} testability in exciting projects. 
 
 \end{cvparagraph}
 
@@ -105,16 +107,16 @@ and driving testability in exciting projects. I thrive working in cross-function
   \begin{cventries}
 
     \cventry
-    {Senior QA Specialist}
+    {Senior Test Automation Specialist}
     {NASDAQ}
-    {Jan 2021 - Current}
+    {Apr 2021 - Current}
     {Stockholm}
     {
       \begin{cvitems}
         \item Write unit integration, functional integration tests for a complex, functionally extensive API 
-        \item Participate in sprint planning, prioritization, identifying regression and baseline testing priorities
-        \item Design, execute manual exploratory, scenario-based tests
-        \item Troubleshoot, debug, fix test flake
+        \item Participate actively in sprint planning, prioritization, identifying regression and baseline testing priorities
+        \item Design, execute manual exploratory, flow, scenario-based tests
+        \item Troubleshoot, debug, fix test flake on CI pipelines
         \item TestNG, Java 11, Gradle, Jenkins, Kafka
       \end{cvitems}
     }
@@ -127,8 +129,8 @@ and driving testability in exciting projects. I thrive working in cross-function
     {
       \begin{cvitems}
         \item Write component tests, end-to-end tests for a React Native App 
-        \item Setup test, build and deploy pipelines
-        \item Contonously improve development, test environments for best utilization of resources
+        \item Setup test, build and deploy dev pipelines
+        \item Contonously improve test environments for best utilization of resources
         \item Troubleshooting, debugging of mobile testing bottlenecks
         \item Cypress, ReactJs, ReactNative, Google Firebase, Bitbucket, Appium, Selenium WebdriverIO, Typescript
       \end{cvitems}
@@ -241,7 +243,7 @@ and driving testability in exciting projects. I thrive working in cross-function
       }
 
     \cventry
-      {Student}
+      {Certification}
       {University of Pennsylvania}
       {coursera.org}
       {Feb 2020 - Apr 2020}

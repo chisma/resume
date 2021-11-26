@@ -6,3 +6,4 @@
 *.fdb_latexmk
 __latexindent_temp.tex
 *.synctex(busy)
+.DS_Store

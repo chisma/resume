@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Formal Letter
+% LaTeX Template
+% Version 2.0 (7/2/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@LaTeXTemplates.com)
+%
+% Originally based on an example on WikiBooks 
+% (http://en.wikibooks.org/wiki/LaTeX/Letters) but rewritten as of v2.0
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{letter} % 10pt font size default, 11pt and 12pt are also possible
+
+\usepackage{geometry} % Required for adjusting page dimensions
+
+%\longindentation=0pt % Un-commenting this line will push the closing "Sincerely," to the left of the page
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	top=3cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	left=4.5cm, % Left margin
+	right=4.5cm, % Right margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+
+%\usepackage{esstix} % Use the Stix font by default
+
+\usepackage{microtype} % Improve justification
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME & ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\signature{Soumya Prasad} % Your name for the signature at the bottom
+
+\address{Söderberga Allé 52 \\ Bromma Stockholm} % Your address and phone number
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{Emelie Bohlin \\ Ericsson, Stockholm} % Name/title of the addressee
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT SECTION
+%----------------------------------------------------------------------------------------
+
+\opening{\textbf{Hello!}}
+I am Soumya Prasad. Please allow me to introduce myself.  
+I am an engineer with almost 12 years of experience in various
+areas of product testing.
+
+\hfill \break
+I currently work as a Senior Consultant at B3 Innovation AB, on assignment as QA Test Automation Specialist at Nasdaq, Stockholm since April 2021. I work with TestNg, gradle-based 
+clearing system project, writing integration and API Integration tests, with equal emphasis on smooth CI performance of API tests and best practices to eliminate test flake. I take deep interest in efficiency, speed of builds on test pipelines, with keen eye to automate strategic integration points be it between java services, APIs or between service and event flows.
+
+\hfill \break
+I find this opportunity of Test Manager at Ericsson very exciting and suitable for my competence, well-rounded test experience and commitment to product quality. I bring with me a get-it-done attitude with endless zeal to learn everyday, collaborate and promote quality mindset in the teams I work in.
+
+I look forward to your reply.
+
+\vspace{2\parskip} % Extra whitespace for aesthetics
+\closing{Sincerely,}
+\vspace{2\parskip} % Extra whitespace for aesthetics
+
+%\ps{P.S. You can find additional information attached to this letter.} % Postscript text, comment this line to remove it
+
+%\encl{Copyright permission form} % Enclosures with the letter, comment this line to remove it
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+ 
+\end{document}
